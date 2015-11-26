@@ -1,0 +1,28 @@
+<head>
+    <title>Todo List</title>
+</head>
+
+<body>
+<style>
+    .loading {
+        text-align: center;
+        font-size: 44px;;
+        color: #FFF;
+        margin-top: 90px;
+    }
+</style>
+</body>
+<template name="layoutApp">
+    {{> yield }}
+</template>
+<template name="loading">
+    <div class="loading">
+        Loading ...
+    </div>
+</template>
+<template name="notFound">
+    <div class="loading">
+        404 : not found !
+    </div>
+</template>
+
