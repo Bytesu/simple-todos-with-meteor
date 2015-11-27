@@ -1,6 +1,5 @@
 
 if (Meteor.isClient) {
-  Meteor.subscribe("tasks");
   // This code only runs on the client
   Template.main.helpers({
     tasks: function(){
