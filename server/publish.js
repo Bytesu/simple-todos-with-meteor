@@ -22,4 +22,8 @@ if (Meteor.isServer) {
             ]
         });
     });
+    Meteor.publish("ausers", function () {
+        //return Tasks.find();
+        return AUsers.find({});
+    });
 }
